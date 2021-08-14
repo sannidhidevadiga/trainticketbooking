@@ -1,0 +1,39 @@
+<html>
+<?php
+$con = mysql_connect("localhost","root","");
+if (!$con)
+{
+die('Could not connect: ' . mysql_error());
+}
+mysql_select_db("trainticket", $con);
+
+$result = mysql_query("SELECT * FROM passenger");
+if(!($row=mysql_fetch_array($result) ) )
+echo "No record found";
+else
+{
+?>
+<table border=1 bgcolor="blue" cellspacing = "2" width="30%">
+<tr>
+<th>pid</th>
+<th>Name</th>
+</tr>
+
+<?php
+echo "<tr align=center>";
+echo "<td>" . $row['pid'] . "</td>";
+echo "<td>" . $row['name'] . "</td>";
+echo "</tr>";
+while($row = mysql_fetch_array($result))
+{
+echo "<tr align=center>";
+echo "<td>" . $row[pid'] . "</td>";
+echo "<td>" . $row['name'] . "</td>";
+echo "</tr>"
+}
+mysql_close($con);
+}
+?>
+</table>
+<br/><a href="admin.html">Go Back</a>
+</html>

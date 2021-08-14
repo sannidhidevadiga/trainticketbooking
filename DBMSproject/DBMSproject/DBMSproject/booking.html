@@ -1,0 +1,200 @@
+<!DOTYPE html>
+<html>
+<head>
+<title>RAILWAY</title>
+      <meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>contact-us</title>
+
+		
+		<link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+		<link rel="mask-icon" href="favicon.ico" color="#" />
+
+		
+		<link
+			rel="stylesheet"
+			href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+			integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk"
+			crossorigin="anonymous"
+		/>
+
+		
+		<link
+			rel="stylesheet"
+			href="https://use.fontawesome.com/releases/v5.14.0/css/all.css"
+			integrity="sha384-HzLeBuhoNPvSl5KYnjx0BT+WB0QEEqLprO+NBkkk5gbc67FTaL7XIGa2w1L0Xbgc"
+			crossorigin="anonymous"
+		/>
+
+		
+		<script
+			src="https://code.jquery.com/jquery-3.5.1.slim.js"
+			integrity="sha256-DrT5NfxfbHvMHux31Lkhxg42LY6of8TaYyK50jnxRnM="
+			crossorigin="anonymous"
+		></script>
+    
+<style>
+ul {
+  list-style-type: none;
+ 
+  padding: 0;
+  overflow: hidden;
+ 
+  font-size:25px;
+}
+
+li {
+  float: right;
+}
+a.p1{
+float:left;
+}
+
+li a {
+  display: block;
+  color: black;
+  text-align: center;
+  padding: 24px 26px;
+  text-decoration: none;
+}
+
+li a:hover {
+  background-color: white;
+ 
+
+}
+body{
+background-image:url('https://cdn.pixabay.com/photo/2018/03/04/18/54/wall-3198880_1280.jpg');
+background-size:cover;
+backdrop-filter: blur(1px);
+
+}
+
+
+
+</style>      
+</head>
+<body>
+
+<div class="imagewrap">
+
+<ul>
+   <a class="p1" href="#home"><img src="https://tse3.mm.bing.net/th?id=OIP.uUETROO46j4zLQ3lCS-whwHaHQ&pid=Api&P=0&w=166&h=164" height="75px;"></a></li>
+
+     <li><a href="mainlogin.html"><b>Logout</b></a></li>
+<li><a href="feedback.html"><b>Feedback</b></a></li>
+ <li><a href="cancel.html"><b>Cancel</b></a></li>
+ <li><a  class="active" href="booking.html"><b>Book Ticket</b></a></li>
+  <li><a href="contact.html"><b>Contact</b></a></li>
+<li><a  href="main1.html"><b>Home</b></a></li>
+
+
+
+ 
+
+</ul>
+</div>
+</div><br><br><br>
+<p class="p1">
+		<h1><center>PASSENGER DETAILS</center></h1> 
+    </p>
+   
+  <form action="details.php" method="post" ><br><br>
+<div class="container-fluid">
+<div class="row justify-content-around">
+<section id="intro" class="col-11 col-md-5 col-lg-4 px-3 py-5 mb-4 text-justify shadow">
+
+    <center> NAME:<input type="text" name="pname" placeholder="Enter your name" required><br><br>
+     GENDER:<input type="radio" name="gender" value="male">Male
+            <input type="radio" name="gender" value="female">Female<br><br>
+     AGE:<input type="number" name="age" ><br><br>
+     CITY:<input type="text" name="pcity"> <br><br>
+    PHONE NO:<input type="text"   name="telephone" required placeholder="91+9559559331" ></center>
+</section>
+</div>
+</div>
+
+
+    <h1><center>BOOKING</center></h1>
+    </p>
+<div class="container-fluid">
+<div class="row justify-content-around">
+<section id="intro" class="col-11 col-md-5 col-lg-4 px-3 py-5 mb-4 text-justify shadow">
+
+       
+         <center>  <label for="from">FROM: </label>
+           <input list="From" id="from" name="from">
+          <datalist id="From">
+             <option value="Mumbai" >
+             <option value="Manglore" >
+             <option value="Delhi">
+             <option value="Banglore">
+          </datalist>
+           <br><br>
+
+
+           <label for="to">TO: </label>
+          <input list="To" id="to" name="to">
+          <datalist id="To">
+             <option value="Mumbai" >
+             <option value="Manglore" >
+             <option value="Delhi">
+             <option value="Banglore">
+           </datalist>
+          <br><br>
+      <label for= "date">DATE:</label>
+      <input type="text" id="date" name="date" required>
+      <br><br>
+        TIME:
+        <input list="Time" id="time" name="time">
+          <datalist id="Time">
+             <option value="9:00AM"  ></option>
+             <option value="12:00 PM"  ></option>
+             <option value="3:00 PM"  ></option>
+             <option value="7:00 PM" ></option>
+           </datalist><br><br>
+       TRAIN:
+       <input list="Train" id="train" name="train">
+          <datalist id="Train">
+             <option value="Rajdhani Express-Bangalore to Mangalore"  > </option>
+             <option value="Shatabdhi Express-Mumbai to Bangalore"></option>
+             <option value="Bharath Express-Mumbai to Delhi" ></option>
+             <option value="Rajya Rani Express-Delhi to Bangalore"  ></option>
+             <option value="Yuva Express-Mangalore to Mumbai" > </option>
+             <option value="Superfast Express-Mangalore to Delhi"  ></option>
+           </datalist>
+      <br><br> 
+        
+      
+           CLASS :<br>
+         <label><input type="radio" name="cname" value="1A"  checked>1A</label>  
+        
+           <label><input type="radio" name="cname" value="2A" >2A</label> <br>
+           <label><input type="radio" name="cname" value="3A" >3A</label> 
+           <label><input type="radio" name="cname" value="FC" >FC</label> <br>
+           <label><input type="radio" name="cname" value="CC" >CC</label>
+           <label><input type="radio" name="cname" value="SL">SL</label> <br>
+           <label><input type="radio" name="cname" value="2S" >2S</label></center>
+           
+      </section>
+</div>
+</div>
+           <br><br>
+
+           <section>
+            
+            <div style="text-align: center;">
+             <input type="reset" value="Reset"></button>
+               <br><br>
+             <input type="submit" value="Submit"></button>
+            </div>   
+  </form>
+           </section>
+           
+
+            
+     
+ 
+</div>
+</body>
+</html>

@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>FEEDBACK PAGE</title>
+  <link rel="stylesheet" type="text/css"  href="styles1.css">
+  
+<style>
+ul {
+  list-style-type: none;
+ 
+  padding: 0;
+  overflow: hidden;
+ 
+  font-size:25px;
+}
+
+li {
+  float: right;
+}
+a.p1{
+float:left;
+}
+
+li a {
+  display: block;
+  color: black;
+  text-align: center;
+  padding: 24px 26px;
+  text-decoration: none;
+}
+
+li a:hover {
+  background-color: white;
+ 
+
+}
+body{
+background-image:url('https://cdn.pixabay.com/photo/2018/03/04/18/54/wall-3198880_1280.jpg');
+background-size:cover;
+backdrop-filter: blur(1px);
+
+}
+
+
+
+</style>      
+</head>
+<body>
+
+<div class="imagewrap">
+
+<ul>
+   <a class="p1" href="#home"><img src="https://tse3.mm.bing.net/th?id=OIP.uUETROO46j4zLQ3lCS-whwHaHQ&pid=Api&P=0&w=166&h=164" height="75px;"></a></li>
+
+     <li><a href="mainlogin.html"><b>Logout</b></a></li>
+<li><a  class="active" href="feedback.html"><b>Feedback</b></a></li>
+ <li><a href="cancel.html"><b>Cancel</b></a></li>
+ <li><a href="booking.html"><b>Book Ticket</b></a></li>
+  <li><a href="contact.html"><b>Contact</b></a></li>
+<li><a class="active" href="main1.html"><b>Home</b></a></li>
+
+
+
+ 
+
+</ul>
+</div>
+    <div class="feedback">
+       <h1>FEEDBACK FORM</h1><hr/>
+       <p>We are always ready to take feedback from you for the better experience!</p>
+    </div>
+    <div class="feedback-form">
+        <form id="feedback-form"  action="feedback.php" method="post">
+        <input  type="text" name="name" class="form-control" placeholder="Your Name" required>
+        <br>
+        <input  type="email" name="email" class="form-control" placeholder="Email" required>
+        <br>
+	
+    <div class="rightTab">
+          <p>How much do you rate our sevices</p>
+        <label>
+        <input name="recommend"  value="very good" type="radio" class="input-radio"/ >Very Good</label><br>
+      
+        <label>
+        <input name="recommend" value="good" type="radio" class="input-radio"  />Good</label><br>
+
+         <label>
+        <input name="recommend" value="bad" type="radio" class="input-radio"  />Bad</label><br>
+     </div>
+
+        
+              <textarea name="message" class="form-control" placeholder="write your feedback" row="4" required></textarea><br>
+              <input type="submit"  class="form-control submit" value="SEND">
+
+  
+        </form>
+    </div>
+
+
+</body>
+</html>

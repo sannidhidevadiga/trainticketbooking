@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script>
+ $(document).ready(function(){
+    setInterval(function(){
+    $("#autodata").load("display.php");
+    refresh();
+    },1000);
+    });
+    </script>
+</head>
+<body style="background-image:url('https://cdn.pixabay.com/photo/2018/03/04/18/54/wall-3198880_1280.jpg');">
+<div id="autodata"></div>
+</body>
+</html>
